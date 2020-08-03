@@ -3,7 +3,7 @@
 //Define las variables que necesites
 var pasados = [];
 var proximos = [];
-var fechaActual;
+var fechaActually;
 var eventos;
 
 $(document).ready(function () {
@@ -14,12 +14,12 @@ $(document).ready(function () {
   }).done(function (resultado) {
 
     //Guarda el resultado en variables
-    fechaActual = resultado.fechaActual;
+    fechaActually = resultado.fechaActually;
     eventos = resultado.eventos;
 
     //Clasifica los eventos segun la fecha actual del JSON
     for(var i = 0; i < eventos.length; i++){
-      if (eventos[i].fecha < fechaActual){
+      if (eventos[i].fecha < fechaActually){
         pasados.push(eventos[i]);
       }else{
         proximos.push(eventos[i]);
