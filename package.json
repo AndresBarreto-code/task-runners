@@ -1,0 +1,27 @@
+{
+  "name": "task-runners-example",
+  "version": "1.0.0",
+  "description": "This is a example of task runners",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Hola a todos\"",
+    "dev": "node gulpfile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/andresbarreto-code/task-runners-example"
+  },
+  "author": "Andres Barreto",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "babel-preset-es2015": "^6.24.1",
+    "grunt": "^1.2.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-stylus": "^2.7.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}
