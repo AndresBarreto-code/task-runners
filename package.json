@@ -4,8 +4,10 @@
   "description": "This is a example of task runners",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Hola a todos\"",
-    "dev": "node gulpfile"
+    "test": "echo \"Se ha cumplido las tareas\"",
+    "css": "stylus src/css/style.styl -o build/css/",
+    "js": "cd build && if not exist \"js\" mkdir js && cd .. && uglifyjs src/js/registro.js -o build/js/registro.min.js",
+    "build": "npm run css && npm run js && npm run test"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
     "gulp-babel": "^8.0.0",
     "gulp-plumber": "^1.2.1",
     "gulp-stylus": "^2.7.0",
-    "gulp-uglify": "^3.0.2"
+    "gulp-uglify": "^3.0.2",
+    "uglify-js": "^3.10.1"
   }
 }
